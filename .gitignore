@@ -19,3 +19,5 @@
 .sass-cache/
 
 .DS_Store
+
+/vendor/bundle
