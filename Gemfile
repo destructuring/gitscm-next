@@ -26,6 +26,7 @@ gem "awesome_print"
 gem 'newrelic_rpm'
 gem 'exceptional'
 gem 'tire'
+gem "unicorn", "~> 1.1.5", :require => nil
 
 # Gems used only for assets and not required
 # in production environments by default.
