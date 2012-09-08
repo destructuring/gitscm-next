@@ -40,7 +40,8 @@ gem 'jquery-rails'
 gem 'less-rails-bootstrap'
 
 group :production do
-  gem "pg"
+  gem "sqlite3"
+  gem "sqlite3-ruby"
 end
 
 group :development do

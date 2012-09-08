@@ -112,7 +112,6 @@ GEM
       faraday_middleware (~> 0.8)
       hashie (~> 1.2)
       multi_json (~> 1.0)
-    pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -217,7 +216,6 @@ DEPENDENCIES
   netrc
   newrelic_rpm
   octokit
-  pg
   rails (= 3.2.2)
   redcarpet
   rest-client
