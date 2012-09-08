@@ -6,6 +6,8 @@ load 'config/deploy'
 # rtfm deploy
 namespace :rtfm do
   task :update_code do
+    run "cd #{deploy_release} && #{ruby_loader} bin/local-helper rake db:migrate"
+    run "cd #{deploy_release} && #{ruby_loader} bin/local-helper bundle exec rake local_index"
   end
 
   task :restart do
