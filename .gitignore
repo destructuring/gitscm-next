@@ -21,3 +21,7 @@
 .DS_Store
 
 /vendor/bundle
+/cache
+/backup
+/.tmp
+*.orig
