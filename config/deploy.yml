@@ -2,8 +2,8 @@
 repository: https://github.com/destructuring/gitscm-next
 application: rtfm
 
-user: zendesk
-group: zendesk
+user: buddhy
+group: buddhy
 
 ruby_loader: /usr/local/rvm/bin/rvm-exec
 deploy_ruby: ree
