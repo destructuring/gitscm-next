@@ -1,6 +1,6 @@
 include_recipe "unicorn"
 
-template "#{release_dir}/config/database.yml" do
+template "#{node[:release_dir]}/config/database.yml" do
   mode 0640
   source "database.yml.erb"
 end
