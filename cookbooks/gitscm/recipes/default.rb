@@ -1,5 +1,10 @@
 include_recipe "unicorn"
 
+template "#{release_dir}/config/database.yml" do
+  mode 0640
+  source "database.yml.erb"
+end
+
 link "#{node[:release_dir]}/log" do
   to "#{node[:project_dir]}/#{node[:log_dir]}"
 end
