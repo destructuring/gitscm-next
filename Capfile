@@ -16,6 +16,7 @@ end
 
 # hooks into alpha_omega deploy
 after "deploy:update_code", "rtfm:update_code"
+after "deploy:cook", "microwave:cook"
 after "deploy:restart", "rtfm:restart"
 
 # interesting hosts
