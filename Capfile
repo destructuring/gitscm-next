@@ -11,6 +11,7 @@ namespace :rtfm do
   end
 
   task :restart do
+    run "sudo service #{application} reload"
   end
 end
 
