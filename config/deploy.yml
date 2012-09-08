@@ -1,6 +1,6 @@
 --- 
 repository: https://github.com/destructuring/gitscm-next
-application: rtfm
+application: gitscm
 
 user: buddhy
 group: buddhy
