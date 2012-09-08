@@ -15,25 +15,17 @@ You'll need a Ruby environment to run Rails.  First do:
 
 Then you need to create the database structure:
 
-    $ rake db:migrate
+    $ bundle exec rake db:migrate
 
 Now you'll want to populate the man pages.  You can do so from a local Git
 source clone like this:
 
-    $ rake local_index
-
-Or you can do it from GitHub (much slower) like this:
-
-    $ rake preindex
-
-Now you need to get the latest downloads for the downloads pages:
-
-    $ rake downloads
+    $ bundle exec rake local_index
 
 Now you can run the Rails site to take a look.  Specify an UPDATE_TOKEN so you
 can use the world's stupidest authentication mechanism:
 
-    $ UPDATE_TOKEN=something rails server
+    $ UPDATE_TOKEN=something bundle exec rails server
 
 The site should be running on http://localhost:3000
 
