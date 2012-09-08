@@ -20,7 +20,7 @@ Then you need to create the database structure:
 Now you'll want to populate the man pages.  You can do so from a local Git
 source clone like this:
 
-    $ GIT_REPO=../git/.git rake local_index
+    $ rake local_index
 
 Or you can do it from GitHub (much slower) like this:
 
