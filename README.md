@@ -25,9 +25,9 @@ source clone like this:
 Now you can run the Rails site to take a look.  Specify an UPDATE_TOKEN so you
 can use the world's stupidest authentication mechanism:
 
-    $ UPDATE_TOKEN=something bundle exec rails server
+    $ UPDATE_TOKEN=something bundle exec unicorn_rails
 
-The site should be running on http://localhost:3000
+The site should be running on http://localhost:8080
 
 Now you'll probably want some book data.  This is more complicated.  You'll have
 to clone the progit sources, run the server and then run the populating rake
