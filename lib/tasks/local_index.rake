@@ -3,7 +3,7 @@ require 'asciidoc'
 # fill in the db from a local git clone
 task :local_index => :environment do
   template_dir = File.join(Rails.root, 'templates')
-  dir = ENV["GIT_REPO"]
+  dir = ENV["GIT_REPO"] || ".git"
   rebuild = ENV['REBUILD_DOC']
   rerun = ENV['RERUN'] || false
 
