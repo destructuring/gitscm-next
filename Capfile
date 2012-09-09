@@ -7,7 +7,7 @@ load 'config/deploy'
 namespace :gitscm do
   task :migrate do
     run "cd #{deploy_release} && RAILS_ENV=master #{ruby_loader} bin/local-helper rake db:migrate"
-    run "cd #{deploy_release} && RAILS_ENV=master #{ruby_loader} bin/local-helper bundle exec rake local_index"
+    run "cd #{deploy_release} && RAILS_ENV=master #{ruby_loader} bin/local-helper rake local_index"
   end
 
   task :restart do
