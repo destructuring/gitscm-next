@@ -44,11 +44,11 @@ environment variable.
 
 To run the tests for this project, run:
 
-    $ rake test
+    $ bundle exec rake test
 
 To run the website for testing purposes, run:
 
-    $ bundle exec rackup config.ru
+    $ bundle exec unicorn_rails
 
 ## Contributing
 
@@ -64,6 +64,3 @@ the MIT-LICENSE.txt file.
 
 All graphical assets and are licensed under the 
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
-
-
-
