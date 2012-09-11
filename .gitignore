@@ -25,3 +25,8 @@
 /backup
 /.tmp
 *.orig
+
+/config/database.yml
+/config/unicorn.rb
+/libexec/
+/log
