@@ -3,3 +3,11 @@
   database: db/<%= node[:app_env] %>.sqlite3
   pool: 5
   timeout: 5000
+  
+<% if node[:app_env] == "development" %>
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+<% end %>
