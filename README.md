@@ -40,6 +40,9 @@ That will generate the book content from the markdown and post it to the Rails
 server.  If you have the server running elsewhere, you can overwrite the CONTENT_SERVER
 environment variable.
 
+UPDATE_TOKEN, GITBOOK_DIR, and GENLANG default to the above examples.
+CONTENT_SERVER defaults to http://localhost:8080
+
 ## Testing
 
 To run the tests for this project, run:
