@@ -6,7 +6,7 @@ require 'awesome_print'
 # export UPDATE_TOKEN=token
 # bundle exec rake genbook GENLANG=en
 
-CONTENT_SERVER = ENV["CONTENT_SERVER"] || "http://localhost:3000"
+CONTENT_SERVER = ENV["CONTENT_SERVER"] || "http://localhost:8080"
 
 def generate_pages(lang, chapter, content)
   toc = {:title => '', :sections => []}
