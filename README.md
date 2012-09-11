@@ -10,7 +10,7 @@ This app is written in Ruby on Rails and deployed on Heroku.
 
 You'll need a Ruby environment to run Rails.  First do:
 
-    $ rvm use 1.9.2
+    $ rvm use 1.9.3
     $ bundle install
 
 Then you need to create the database structure:
@@ -33,10 +33,8 @@ Now you'll probably want some book data.  This is more complicated.  You'll have
 to clone the progit sources, run the server and then run the populating rake
 task:
 
-    $ cd ../
-    $ git clone git://github.com/progit/progit.git
-    $ cd gitscm
-    $ UPDATE_TOKEN=something rake genbook GITBOOK_DIR=../progit/ GENLANG=en
+    $ git clone git://github.com/progit/progit.git .tmp/progit
+    $ UPDATE_TOKEN=something bundle exec rake genbook GITBOOK_DIR=.tmp/progit/ GENLANG=en
 
 That will generate the book content from the markdown and post it to the Rails
 server.  If you have the server running elsewhere, you can overwrite the CONTENT_SERVER
