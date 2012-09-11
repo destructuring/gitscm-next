@@ -67,7 +67,7 @@ class DocController < ApplicationController
   end
 
   def related_update
-    if params[:token] != ENV['UPDATE_TOKEN']
+    if params[:token] != (ENV['UPDATE_TOKEN'] || 'something')
       return render :text => 'nope'
     end
 
@@ -80,7 +80,7 @@ class DocController < ApplicationController
   # API Methods to update book content #
 
   def book_update
-    if params[:token] != ENV['UPDATE_TOKEN']
+    if params[:token] != (ENV['UPDATE_TOKEN'] || 'something')
       return render :text => 'nope'
     end
 
