@@ -30,3 +30,8 @@ execute "app_env log" do
   creates "#{node[:release_dir]}/log/#{node[:app_env]}.log"
 end
 
+if node[:env_pod] == "localdomain"
+  link "#{node[:release_dir]}/current" do
+    to "."
+  end
+end
