@@ -11,7 +11,7 @@ namespace :gitscm do
 
   task :restart do
     if dna["node_env"] == "localdomain"
-      run "libexec/server #{application} reload"
+      run "#{deploy_release}/libexec/server #{application} reload"
     else
       run "sudo service #{application} reload"
     end
