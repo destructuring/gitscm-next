@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'alpha_omega/deploy'
-load 'config/deploy'
 
 # gitscm deploy
 namespace :gitscm do
@@ -28,3 +27,5 @@ after "deploy:restart", "gitscm:restart"
 Deploy self, __FILE__ do |admin, node| 
   { :deploy => { } }
 end
+
+load 'config/deploy'
