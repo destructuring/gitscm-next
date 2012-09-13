@@ -7,7 +7,7 @@ end
 
 if node[:app_env] == "development"
   directory "#{node[:release_dir]}/log" do
-    mode 0750
+    mode 0755
   end
 
   execute "test log" do
