@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'alpha_omega/deploy'
+load 'config/deploy'
 
 # gitscm deploy
 namespace :gitscm do
@@ -10,11 +11,9 @@ namespace :gitscm do
   end
 
   task :restart do
-    if dna["node_env"] == "localdomain"
-      run "#{deploy_release}/libexec/server #{application} reload"
-    else
-      run "sudo service #{application} reload"
-    end
+    service_dir=deploy_release
+    service_loader="libexec/server"
+    run "cd #{service_dir} && #{service_loader} #{application} reload"
   end
 end
 
@@ -27,5 +26,3 @@ after "deploy:restart", "gitscm:restart"
 Deploy self, __FILE__ do |admin, node| 
   { :deploy => { } }
 end
-
-load 'config/deploy'
