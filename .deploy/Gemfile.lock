@@ -57,7 +57,7 @@ GEM
     jruby-pageant (1.1.1)
     json (1.5.4)
     marathon (0.0.3)
-    microwave (0.1006.31)
+    microwave (0.1006.32)
       erubis
       fast_xs
       hike
@@ -106,6 +106,7 @@ GEM
       multi_json (~> 1.0)
       multipart-post (~> 1.1)
       twitter-stream (~> 0.1)
+    tvd-alpha_omega (0.0.2)
     tvd-unicorn (0.0.4)
       microwave
     twitter-stream (0.1.16)
@@ -126,4 +127,5 @@ DEPENDENCIES
   microwave
   net-ssh (~> 2.4.0)
   newrelic_rpm (~> 3.3.4)
+  tvd-alpha_omega
   tvd-unicorn
